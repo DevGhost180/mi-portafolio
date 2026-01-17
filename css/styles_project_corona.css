@@ -1,0 +1,16 @@
+
+body{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+background:linear-gradient(180deg,#071021 0%, #071729 60%); color:#e6eef6; -webkit-font-smoothing:antialiased;
+font-family:'Poppins',system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.container_main_page{
+    width: 100%;
+}
+
