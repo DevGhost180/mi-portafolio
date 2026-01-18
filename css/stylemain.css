@@ -16,6 +16,18 @@ font-family:'Poppins',system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
 html {
   scroll-behavior: smooth;
 }
+
+
+#proyectos{
+  scroll-margin-top: 80px;
+}
+#sobremi{
+  scroll-margin-top: 80px;
+}
+#contacto{
+  scroll-margin-top: 80px;
+}
+
 .container_main_page{
     width: 100%;
     
