@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*outline: 1px solid red;
+   /* outline: 1px solid red;
 
 
     con esto ves lo que sobresale*/
@@ -28,13 +28,21 @@ html {
   scroll-margin-top: 80px;
 }
 
+.title.section{
+ color: #000000;
+ font-weight: 600;
+}
+
 .container_main_page{
     width: 100%;
     
 }
 .container_carta{
     /*border: 2px solid saddlebrown;*/
-    padding : 2rem 1.2rem ;
+    padding : 6rem 1.2rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 .container_carta_interno{
@@ -43,15 +51,21 @@ html {
     height: auto;
     background-color: rgb(12, 12, 12);
     border-radius: 20px;
-    /*border: 2px solid blue;*/
+  
+    padding: 2rem 0 2rem 0 ;
 }
-@media (max-width: 480px) {
 
+@media (max-width: 480px) {
+    .container_carta {
+         width: 100%;
+        padding: 1rem 0; /* Menos espacio arriba/abajo en móvil */
+    }
     .container_carta_interno{
         display: flex;
         height: auto;
         flex-wrap: nowrap;
         width: 100%;
+        padding: 2rem 
         /*border:2px solid cyan;*/
         
     }
@@ -97,7 +111,6 @@ position: sticky;
 top: 0;
 z-index: 1000;
 background-color: rgb(12, 12, 12);
-
 align-items: center;
 border-radius: 8px;
 width: 100%;
@@ -333,13 +346,17 @@ justify-content: center;
     height: auto;
 }
 .texto-tecnologias{
+
     display: flex;
+    font-weight: 600;
     font-family: "Poppins";
     font-size: larger;
     justify-content: center;
     align-items: center;
-    color: white;
-    padding-top: 1.5rem;
+    color: rgb(16, 16, 16);
+    padding: 1.5rem 0 1.5rem;
+    flex-wrap: wrap;
+    font-size: 2rem
 }
 .container_iconos{
     display: flex;
@@ -357,28 +374,42 @@ justify-content: center;
         flex-wrap: wrap;
         gap: 2em;
     }
+    .texto-tecnologias{
+        font-size: 1.5rem;
+    }
 }
 
 .container_separadores{
     width: 100%;
     margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
     display: grid;
     place-items: center;
     grid-template-columns: 1fr ;
+    background-color: white;
    
 }
 .front-container,.container_back-end,.container_sql{
+    margin: 2.5rem 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1em;
+    gap: 2em;
     
     
 }
 
+.container_rubro .container_logo_tecnologia p{
+    color: #000000;
+}
 
+.container_rubro .container_logo_tecnologia:hover p{
+   color: #ffffff;
+    
+}
 @media (max-width: 480px) {
     .container_separadores{
-        width: 100vw;
+        width: 100%;
     }
     .front-container,.container_back-end,.container_sql{
     display: grid;
