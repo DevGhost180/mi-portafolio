@@ -72,12 +72,12 @@ html {
     .container_info_general{
         flex-wrap: wrap;
         display: flex;
-        border:2px solid green;
+        /*border:2px solid green;*/
         flex-direction: column;
      
     }
     .container_contacto{
-        border: 2px solid red;
+        /*border: 2px solid red;*/
         height: auto;
         display: flex;
         flex-direction: column;
